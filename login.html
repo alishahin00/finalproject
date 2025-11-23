@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Log in</title>
+  <link rel="stylesheet" href="login&Registe.css" />
+  
+</head>
+<body>
+
+<div class="container">
+  <div id="error"></div> 
+  <form id="form" action="">
+    <input type="email" id="email" name="email" placeholder="email" />
+    <input type="password" id="Password" name="password" placeholder="password" />
+    <button type="submit" id="submit" name="log in" formaction="index.html">Log in</button>
+    <p>Don't have an account? <a href="register.html" target="_self">Register now</a></p>
+  </form>
+</div>
+
+<script>
+  var form = document.getElementById("form");
+  var errorEL = document.getElementById("error");
+  var txtemail = document.getElementById("email");
+  var txtPassword = document.getElementById("Password");
+
+  form.addEventListener("submit", function (event) {
+    let error = [];
+
+    if (txtemail.value.trim() === "" || txtemail == null) {
+      error.push("Email is required");
+    }
+
+    if (txtPassword.value.length < 6) {
+      error.push("Password must be at least 6 characters");
+    }
+
+    if (txtPassword.value.length > 10) {
+      error.push("Password must be at most 10 characters");
+    }
+
+    if (error.length > 0) {
+      event.preventDefault();
+      errorEL.innerHTML = error.join("<br>");
+    }else {
+      
+      localStorage.setItem("email", txtEmail.value);
+      localStorage.setItem("password", txtPassword.value);
+
+      alert("Account created successfully! You can now log in.");
+      window.location.href = "login.html";
+    }
+  });
+</script>
+
+</body>
+</html>

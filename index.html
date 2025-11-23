@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link id="theme-style" rel="stylesheet" href="style.css">
+    <title>IMD Car</title>
+</head>
+
+<body>
+    
+
+
+<!-- start of navigation bar -->
+
+<header>
+
+    <a href="index.html" class="logo"> IMD Car </a>
+
+    <nav class="navigation">
+        <a href="#home" class="home">Home</a>
+        <a href="#service" class="service">service</a>
+        <a href="#new" class="new">New cars</a>
+        <a href="#Featured" class="Featured">Featured cars</a>
+        <a href="testdrive.html" class="Test-drive" target="_blank">Test drive</a>
+        <a href="#client" class="clients">clients</a>
+        <a href="#contact" class="contact">About Us</a>
+        
+        <button id="ChangeMode" class="ChangeMode"><i class="fa-solid fa-moon"></i></button>
+        
+        
+
+       <i class="fa-regular fa-user" onclick="toggleMenu()"></i>
+
+        <div class="menu" id="menu">
+        <div class="sub-menu" id="menuContent">
+
+
+        </div>
+        </div>
+
+    
+       
+    </nav>
+
+
+</header>
+       
+    </nav>
+
+
+</header>
+
+<!-- end of navigation bar -->
+
+
+
+<!-- start of home-->
+
+<section class="main" id="home">
+
+    <video autoplay muted loop class="background-video">
+        <source src="videos/Cinematic Car Promotion Video - Bmw.mp4" type="video/mp4">
+    </video>
+    
+    
+        <div class="main-content">
+            
+            <h2>get your desired car in resonable price</h2>
+    
+            <h3>Discover our exclusive car collection featuring luxury sedans, powerful sports cars, and reliable family vehicles. Each
+            model is carefully selected to meet high standards of style, comfort, and performance.</h3>
+                <br>
+                <br>
+            <a href="contactus.html" class="main-button">Contact us</a>
+    
+        
+        </div>
+    
+    </section>
+
+<!-- end of home -->
+
+
+
+
+<section class="cards" id="service">
+
+    <h2 class="title">Services</h2>
+
+    <div class="content">
+
+        <div class="card">
+
+            <div class="icon">
+                <i class="fa-solid fa-car"></i>
+            </div>
+
+            <div class="info">
+                <h3>largest dealership of cars</h3>
+                <p>As the largest dealership of cars in the region, we proudly present a diverse and extensive collection of vehicles to
+                suit every need and lifestyle.
+                </p>
+            </div>
+
+        </div>
+        <div class="card">
+
+
+
+            <div class="icon">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+            </div>
+
+            <div class="info">
+                <h3>unlimited repair warranty</h3>
+            <p>Drive with confidence—our Unlimited Repair Warranty covers your car without mileage or time limits. Enjoy expert service
+            and lasting peace of mind
+            </p>
+            </div>
+
+
+        </div>
+        <div class="card">
+
+            <div class="icon">
+                <i class="fa-solid fa-envelope-open-text"></i>
+            </div>
+
+            <div class="info">
+                <h3>insurance support</h3>
+            <p>Get hassle-free insurance assistance. We help you find the best coverage and handle all the paperwork for a smooth
+            experience.
+            </p>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+<!--  -->
+
+
+<div class="newcars-slider" id="new">
+        
+    <div class="carlist-title">
+        <h3>checkout the latest Cars</h3>
+        <h2>Newest Cars</h2>
+    </div>
+    <div class="line"></div>
+    
+    
+    <div class="slider-container">
+        <div class="slider-track">
+    
+    
+    <div class="carlist">
+    
+    
+     
+    
+        <div class="content">
+    
+    
+            <div class="carimage">
+                <img src="images/new-cars-model/ncm1.png" alt="chevrolet">
+            </div>
+    
+            <div class="car-details">
+    
+                <p class="car-title">chevrolet Camaro ZA100</p>
+    
+                <p class="info">The Chevrolet Camaro ZA100 is a bold and aggressive sports car,
+                     known for its muscular design and powerful performance. It offers a thrilling drive with strong engine options, 
+                     responsive handling, and advanced tech features, making it a favorite among muscle car fans.</p>
+    
+               
+
+    
+            </div>
+        </div>
+    
+    
+    </div>
+    
+    
+    
+    <div class="carlist">
+    
+    
+    
+        <div class="content">
+    
+    
+            <div class="carimage">
+                <img src="images/new-cars-model/ncm2.png" alt="ferrari">
+            </div>
+    
+            <div class="car-details">
+    
+                <p class="car-title">BMW series-3</p>
+    
+                <p class="info">The BMW 3 Series is a compact luxury sedan that offers a balance of performance,
+                     comfort, and technology. It comes with powerful engine options, sharp handling,
+                      and a high-quality interior, making it one of the most popular models in its class.</p>
+    
+            </div>
+        </div>
+    
+    
+    </div>
+    
+    
+    <div class="carlist">
+    
+    
+        <div class="content"  >
+    
+    
+            <div class="carimage" >
+                <img src="images/new-cars-model/ncm3.png" alt="bmw">
+            </div>
+    
+            <div class="car-details">
+    
+                <p class="car-title">Ferrari 488 superfast </p>
+    
+                <p class="info">The Ferrari 488 GTB is a high-performance supercar powered by a 3.9L twin-turbo V8 engine producing 661 horsepower. It accelerates from 0 to 100 km/h in just 3.0 seconds 
+                    and reaches a top speed of 330 km/h. Known for its sharp handling and sleek design,
+                     it delivers an exciting driving experience.</p>
+
+    
+            </div>
+        </div>
+    
+    
+    </div>
+    
+    
+        </div>
+    </div>
+    
+    
+    <div class="slider-controls">
+        <button id="prevBtn"> < </button>
+        <button id="nextBtn"> > </button>
+    </div>
+    
+    
+    
+    
+
+
+<!--  -->
+<div class="featured-cars-Container" id="Featured">
+<span>checkout the featured cars</span>
+<div class="cars">
+
+    <div class="car">
+        <img src="images/featured-cars/fc1.png" />
+        <div class="features">
+            <p>model: 2017 </p>
+            <p>3100 mi</p>
+            <p>240HP</p>
+            <p> automatic</p>
+        </div>
+        <div class="description">
+            <h4>BMW 6-Series Gran Coupe</h4>
+            <h5>$89,395</h5>
+            <p>The BMW 6-Series Gran Coupe combines luxury and performance, featuring elegant styling and a smooth ride.</p>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="images/featured-cars/fc2.png" />
+        <div class="features">
+            <p>model: 2017 </p>
+            <p>3100 mi</p>
+            <p>240HP</p>
+            <p> automatic</p>
+        </div>
+        <div class="description">
+            <h4>chevrolet camaro wmv20</h4>
+            <h5>$$66,575</h5>
+            <p>The Chevrolet Camaro WMV20 is a sporty muscle car known for its bold design and powerful engine options.</p>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="images/featured-cars/fc3.png" />
+        <div class="features">
+            <p>model: 2017 </p>
+            <p>3100 mi</p>
+            <p>240HP</p>
+            <p> automatic</p>
+        </div>
+        <div class="description">
+            <h4>lamborghini v520</h4>
+            <h5>$125,250</h5>
+            <p>The Lamborghini V520 offers exotic looks and incredible speed, built for high-performance driving enthusiasts.</p>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="images/featured-cars/fc4.png" />
+        <div class="features">
+            <p>model: 2017 </p>
+            <p>3100 mi</p>
+            <p>240HP</p>
+            <p> automatic</p>
+        </div>
+        <div class="description">
+            <h4>audi a3 sedan</h4>
+            <h5>$95,500</h5>
+            <p>The Audi A3 Sedan is a compact luxury car offering advanced tech, a comfortable interior, and great handling.</p>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="images/featured-cars/fc5.png" />
+        <div class="features">
+            <p>model: 2017 </p>
+            <p>3100 mi</p>
+            <p>240HP</p>
+            <p> automatic</p>
+        </div>
+        <div class="description">
+            <h4>infiniti z5</h4>
+            <h5>$36,850</h5>
+            <p>The Infiniti Z5 delivers a mix of luxury and performance, ideal for daily driving with a premium feel.</p>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="images/featured-cars/fc6.png" />
+        <div class="features">
+            <p>model: 2017 </p>
+            <p>3100 mi</p>
+            <p>240HP</p>
+            <p> automatic</p>
+        </div>
+        <div class="description">
+            <h4>porsche 718 cayaan</h4>
+            <h5>$48,500</h5>
+            <p>The Porsche 718 Cayaan is a mid-engine sports car known for precise handling and thrilling performance.</p>
+        </div>
+    </div>
+
+</div>
+
+<a href="listcar.html" class="view-more-btn" target="_blank">View more</a>
+
+</div>
+
+
+<section class="client-section" id="client">
+<h2>what our clients say</h2>
+
+<div class="client-container">
+
+    <div class="client-card">
+        <img src="images/clients/c1.png">
+        <p>
+            The best dealership I've worked with! The car buying process was smooth and stress-free.
+        </p>
+        <h4> romi rain</h4>
+        <span>california</span>
+
+    </div>
+
+    <div class="client-card">
+        <img src="images/clients/c2.png">
+        <p>
+            I had an amazing experience from start to finish. The team was professional, and they really took the time to find the
+            perfect car for me. I couldn't be happier!
+        </p>
+        <h4>sara doe</h4>
+        <span>washington</span>
+
+    </div>
+
+
+    <div class="client-card">
+        <img src="images/clients/c3.png">
+        <p>
+            I've been to several dealerships, but none compare. The team here helped me find exactly what I wanted and guided me
+            through every step. I'll definitely be back for my next car!
+        </p>
+        <h4>tomas lili</h4>
+        <span>California</span>
+    </div>
+
+
+</div>
+</section>
+
+<h3 class="brand-title">Our parteners</h3>
+
+<section class="brand-section">
+
+<!-- <div class="brand-card">
+    <img src="images/brand/br1.png">
+</div> -->
+<div class="brand-card">
+    <img src="images/brand/br2.png">
+</div>
+<div class="brand-card">
+    <img src="images/brand/br3.png">
+</div>
+<div class="brand-card">
+    <img src="images/brand/br4.png">
+</div>
+<div class="brand-card">
+    <img src="images/brand/br5.png">
+</div>
+<!-- <div class="brand-card">
+    <img src="images/brand/br6.png">
+</div> -->
+</section>
+
+
+
+
+<!--  -->
+
+<div class="contact-container" id="contact">
+
+
+<div class="column1">
+
+    <h1>IMD Car</h1>
+
+    <p class="p1">get your desired car in resonable price</p>
+
+    <p>IMD Car@gmail.com</p>
+
+    <p>+1 (222) 1234567890</p>
+
+</div>
+
+
+
+<div class="column2">
+
+    <h3>about devloon</h3>
+
+
+    <p>About us</p>
+    <p>terms of service</p>
+    <p>privacy policy</p>
+
+
+
+</div>
+
+
+
+<div class="column3">
+
+    <h3>top brands</h3>
+
+    <p>BMW</p>
+    <p>lamborghini</p>
+    <p>camaro</p>
+    <p>audi</p>
+    <p>nissan</p>
+
+
+</div>
+
+
+<div class="column4">
+
+    <p>ferrari</p>
+    <p>porsche</p>
+    <p>land rover</p>
+    <p>Aston martin</p>
+    <p>mercedes</p>
+    <p>opel</p>
+
+
+</div>
+
+
+<div class="column5">
+
+    <h3>news letter</h3>
+    <p>Subscribe to get latest 
+        news update and informations</p>
+        
+<form action="">
+    <input type="email" class="email" placeholder="email" required>
+    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+</form>
+
+</div>
+
+
+</div>
+
+<p class="footer">© copyright. designed and developed by CS helwan.</p> 
+
+</div>
+
+
+<script src="script.js"></script>
+          
+</body>
+</html>

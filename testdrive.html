@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Test Drive</title>
+  <link rel="stylesheet" href="testdrivestyle.css"/>
+</head>
+<body>
+
+  
+
+
+  <div class="container">
+    <h2>Test Drive</h2>
+    <div id="error"></div>
+    <form id="form">
+      <div class="left">
+        <input type="text" id="name" name="name" placeholder="Full Name" />
+        <input type="email" id="email" name="email" placeholder="Email" />
+        <input type="tel" id="telephone" name="Phone" placeholder="Phone Number" />
+        <input type="text" id="national-id" name="nationalId" placeholder="National id" />
+      </div>
+
+      <div class="right">
+        <label for="date"><span>Date Of Test Driving:</span></label>
+        <input type="date" id="date" name="testdate" />
+
+        <label for="options" id="Cars label"><span>Select A Vehicle To Test Drive</span></label>
+        <select name="car" id="options">
+             <option value="">-- Please select a car --</option>
+            <optgroup label="ASTON MARTIN">
+              <option value="car 1">ASTON MARTIN DB12</option>
+              <option value="car 3">ASTON MARTIN VALHALLA</option>
+              <option value="car 4">ASTON MARTIN VANTAGE</option>
+              <option value="car 2">ASTON MARTIN VICTOR</option>
+            </optgroup>
+          <optgroup label="AUDI">
+            <option value="car 1">AUDI A5</option>
+            <option value="car 3">AUDI E TRON</option>
+            <option value="car 4">AUDI Q8</option>
+            <option value="car 2">AUDI RS7</option>
+            <option value="car 4">AUDI R8</option>
+          </optgroup>
+          <optgroup label="BMW">
+              <option value="car 2">BMW M4</option>
+            <option value="car 1">BMW Z4</option>
+            <option value="car 3">BMW X6</option>
+            <option value="car 4">BMW 6-Series Gran Coupe</option>
+            <option value="car 4">BMW 8-Series Coupe</option>
+        </optgroup>
+          <optgroup label="MUSCLE CARS">
+              <option value="car 3">CHEVROLET CAMARO</option>
+            <option value="car 1">DODGE CHALLENGER</option>
+            <option value="car 2">DODGE CHARGER</option>
+            <option value="car 4">FORD MUSTANG</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <br/>
+      <button type="submit" name="Request">Request Test Drive</button>
+    </form>
+  </div>
+
+  <script>
+    var form = document.getElementById("form");
+    var errorEL = document.getElementById("error");
+    var txtName = document.getElementById("name");
+    var txtEmail = document.getElementById("email");
+    var txtPhone = document.getElementById("telephone");
+    var txtNationalId = document.getElementById("national-id");
+    var txtCar = document.getElementById("options");
+    var txtDate = document.getElementById("date");
+    
+
+
+    form.addEventListener("submit", function (event) {
+      let error = [];
+
+      if (txtName.value.trim() === "") {
+        error.push("Name is required");
+      }
+
+      if (txtEmail.value.trim() === "") {
+        error.push("Email is required");
+      }
+
+      if (txtPhone.value.trim() === "") {
+        error.push("Phone number is required");
+      }
+
+      if (txtNationalId.value.trim() === "") {
+        error.push("National ID is required");
+      }
+      if (txtDate.value === "") {
+        error.push("Date of Test Driving is required");
+      }
+      if (txtCar.value === "") {
+        error.push("Please select a vehicle");
+      }
+
+      if (error.length > 0) {
+        event.preventDefault();
+        errorEL.innerHTML = error.join("<br>");
+      } else
+      {
+        window.location.href = "index.html";
+      }
+
+      }
+    );
+  </script>
+</body>
+</html>

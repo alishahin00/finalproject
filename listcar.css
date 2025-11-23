@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+.brochure{
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: 5px;
+    color: rgb(28, 28, 170);
+    text-decoration: none
+
+}
+
+
+.test{
+    display: block;
+    padding-top: 10px;
+    padding-left: 5px;
+    color:black;
+    text-decoration: none;
+    background-size: cover;
+
+}
+.search_box{
+    width: 95%;
+    margin:0 auto;
+}
+
+#search__box{
+    margin: 1em 0;
+}
+
+#search__box input{
+    background-color: transparent;
+    width: 40%;
+    border-bottom: 2px solid black;
+    padding: 5em 2em.3em;
+}
+
+#search__box input:focus{
+    border-bottom-color: blue;
+}
+
+#search__box button{
+    padding: 1em 3em;
+    margin-left: 1em;
+    background-color: rgb(20, 27, 232);
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 0.5em;
+    cursor: pointer;
+}
+
+.button-value{
+    border: 2px solid rgb(20, 27, 232);
+    padding: 1em 2.2em;
+    border-radius: 3em;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.active {
+    background-color: rgb(20, 27, 232);
+    color: #fff;
+}
+
+#products{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 1.5em;
+    padding: 2em 0;
+}
+
+.card {
+    /* background-color: #794e895c; */
+    border: #2f2f2f 1px solid;
+    max-width: 18em;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.image-container {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 15em;
+}
+
+.container {
+    padding-top: 1em;
+    color: #110f29;
+}
+
+.container h5 {
+    font-weight: 500;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 720px) {
+    img {
+        max-width: 100%;
+        object-fit: contain;
+        height: 10em;
+    }
+
+    .card {
+        max-width: 10em;
+        margin-top: 1em;
+    }
+
+    #products {
+        grid-template-columns: auto auto;
+        grid-column-gap: 1em;
+    }
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5%;
+    flex-wrap: wrap;
+    padding-left: 10px;
+}
+
+.logo {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1em;
+    padding-left: 30px;
+    color: #fff;
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    padding-right: 20px;
+    transition: 0.25s ease;
+}
+
+.navigation :hover {
+    color: #240eb9;
+}
+
+.navigation i {
+    color: #fff;
+    font-size: 1em;
+    padding-right: 30px;
+    border-radius: 10px;
+    transition: 0.25s ease;
+}
+
+.navigation i:hover {
+    color: #240eb9;
+}
+
+#ChangeMode {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    margin-left: auto;
+}
+
+#ChangeMode:hover {
+    background-color: white;
+    color: black;
+}
+
+/* ----------- INFO STYLE ------------ */
+.container h6 {
+    margin-top: 0.5em;
+    font-size: 0.9em;
+    color: #2f2f2f;
+    background-color: #f1f1f1;
+    padding: 0.5em 0.8em;
+    border-left: 4px solid #333399;
+    border-radius: 4px;
+    font-weight: 400;
+    
+    line-height: 1.4em;
+}
+
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    background-color:#2A2D54;
+    color: white;
+    padding: 40px;
+    padding-bottom: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.contact-container div {
+    flex: 1;
+    padding: 10px;
+}
+
+.column1 h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.p1 {
+    font-size: 14px;
+    color: #aaa;
+    line-height: 1.5;
+}
+
+.column2 h3, .column3 h3, .column5 h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.column2 p, .column3 p, .column4 p, .column5 p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+
+.column2  p{
+    transition: 0.5s ease;
+    color: #eeeeee8d;
+}
+.column2  p:hover{
+    padding-left:15px ;
+}
+
+
+.column3  p{
+    transition: 0.5s ease;
+    color: #eeeeee8d;
+}
+.column3  p:hover{
+    padding-left:15px ;
+}
+
+
+.column4  p{
+    transition: 0.5s ease;
+    color: #eeeeee8d;
+}
+.column4  p:hover{
+    padding-left:15px ;
+}
+
+
+.column5 .email {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.column5 button{
+  background: none;
+  border: none;
+  position:relative;
+  bottom: 30px ;
+  left: 200px;
+  cursor: pointer;
+}
+
+.footer {
+    text-align:left;
+    font-size: 12px;
+    background-color:#2A2D54;
+    color: #777;
+    padding-top: 15px;
+    padding-left: 45px;
+}

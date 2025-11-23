@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register</title>
+  <link rel="stylesheet" href="login&Registe.css" />
+ 
+</head>
+<body>
+
+<div class="container">
+  <div id="error"></div> 
+  <form id="form" action="">
+    <h2>Register</h2>
+
+    <input type="text" id="name" name="name" placeholder="Name" />
+    <input type="email" id="email" name="email" placeholder="Email" />
+    <input type="password" id="password" name="password" placeholder="Password" />
+    <input type="password" id="confirm" name="confirm password" placeholder="Confirm password" />
+    
+    <button type="submit" name="confirm" formaction="index.html">Confirm</button>
+    <p>Already have an account? <a href="login.html" target="_self">Log in</a></p>
+  </form>
+</div>
+<script>
+  var form = document.getElementById("form");
+  var errorEL = document.getElementById("error");
+  var txtName = document.getElementById("name");
+  var txtEmail = document.getElementById("email");
+  var txtPassword = document.getElementById("password");
+  var txtConfirm = document.getElementById("confirm");
+
+  form.addEventListener("submit", function (event) {
+    let error = [];
+
+    if (txtName.value.trim() === "") {
+      error.push("Name is required");
+    }
+
+    if (txtEmail.value.trim() === "") {
+      error.push("Email is required");
+    }
+
+    if (txtPassword.value.length < 6) {
+      error.push("Password must be at least 6 characters");
+    }
+
+    if (txtPassword.value.length > 10) {
+      error.push("Password must be at most 10 characters");
+    }
+
+    if (txtConfirm.value !== txtPassword.value) {
+      error.push("Passwords do not match");
+    }
+
+    if (error.length > 0) {
+      event.preventDefault();
+      errorEL.innerHTML = error.join("<br>");
+    } else {
+      
+      localStorage.setItem("email", txtEmail.value);
+      localStorage.setItem("password", txtPassword.value);
+
+      //for profile
+      localStorage.setItem("username", txtName.value);
+
+      window.location.href = "index.html";
+    }
+    
+  });
+</script>
+
+</body>
+</html>

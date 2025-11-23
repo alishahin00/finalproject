@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>CARVILLA CAR LIST</title>
+  <link rel="stylesheet" href="listcar.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <header>
+
+    <a href="index.html" class="logo">IMD Car</a>
+
+    <nav class="navigation">
+        <a href="index.html#home" class="home">Home</a>
+        <a href="index.html#service" class="service">service</a>
+        <a href="index.html#new" class="new">New cars</a>
+        <a href="index.html#Featured" class="Featured">Featured cars</a>
+        <a href="index.html#client" class="clients">clients</a>
+        <a href="index.html#contact" class="contact">About Us</a>
+        
+    
+
+
+        </div>
+        </div>
+
+       
+    
+       
+    </nav>
+
+
+</header>
+       
+    </nav>
+
+
+</header>
+  <div class="search_box">
+    <div id="search__box">
+      <input type="search" id="search-input" placeholder="search car name here...">
+      <button id="search-button">Search</button>
+    </div>
+
+    <div id="butons">
+      <button class="button-value" onclick="filterproduct('all')">All</button>
+      <button class="button-value" onclick="filterproduct('BMW')">BMW</button>
+      <button class="button-value" onclick="filterproduct('ASTONMARTIN')">ASTONMARTIN</button>
+      <button class="button-value" onclick="filterproduct('AUDI')">AUDI</button>
+      <button class="button-value" onclick="filterproduct('MUSCLECAR')">MUSCLECAR</button>
+    </div>
+
+    <div id="products">
+      <!-- BMW Cars -->
+      <div class="card BMW">
+        <div class="image-container"><img src="images/featured-cars/bmw-z-series-z4-roadster-ms-aerodynamic-removebg-preview.png"
+            alt="BMW 6-Series Gran Coupe"></div>
+        <div class="container">
+          <h5 class="product-name">BMW Z4</h5>
+          <h5>$60,000</h5>
+          <h6>Info: BMW Z4 - Convertible - V6 - white - 2024</h6>
+        </div>
+        <a href="brochures/The BMW Z4 – Brochure.pdf" class="brochure" target="_blank">show brochure</a>
+      </div>
+      <div class="card BMW">
+        <div class="image-container"><img src="images/featured-cars/m4.png" alt="BMW M4"></div>
+        <div class="container">
+          <h5 class="product-name">BMW M4</h5>
+          <h5>$250,000</h5>
+          <h6>Info: BMW M4 - Coupe - Twin-Turbo - white - 2023</h6>
+        </div>
+        <a href="brochures/BMW_M4_Coupe_Specification_Guide-G82.pdf.asset.1629454606360.pdf" class="brochure" target="_blank">show brochure</a>
+      </div>
+      <div class="card BMW">
+        <div class="image-container"><img src="images/featured-cars/x6.png" alt="BMW XSeries 6"></div>
+        <div class="container">
+          <h5 class="product-name">BMW X6</h5>
+          <h5>$250,000</h5>
+          <h6>Info: BMW X6 - SUV - V8 - Black - 2022</h6>
+        </div>
+        <a href="brochures/The_new_X6_Brochure.pdf.asset.1701147693683.pdf" class="brochure"
+          target="_blank">show brochure</a>
+
+      </div>
+      <div class="card BMW">
+        <div class="image-container"><img src="images/featured-cars/series-6.png" alt="BMW 6-Series Gran Coupe"></div>
+        <div class="container">
+          <h5 class="product-name">BMW 6-Series Gran Coupe</h5>
+          <h5>$250,000</h5>
+          <h6>Info: BMW 6-Series Gran Coupe - Luxury Sedan - V6 - white - 2021</h6>
+        </div>
+        <a href="brochures/bmw6.pdf" class="brochure" target="_blank">show brochure</a>
+      </div>
+      <div class="card BMW">
+        <div class="image-container"><img src="images/featured-cars/bmw-8series-coupe-modellfinder.png"
+            alt="BMW 8-Series Coupe"></div>
+        <div class="container">
+          <h5 class="product-name">BMW 8-Series Coupe</h5>
+          <h5>$250,000</h5>
+          <h6>Info: BMW 8-Series Coupe - Sporty - V8 - blue - 2023</h6>
+        </div>
+        <a href="brochures/THE 8 Series Brochure.pdf.asset.1726473144890.pdf" class="brochure" target="_blank">show brochure</a>
+
+      </div>
+
+      <!-- ASTON MARTIN -->
+      <div class="card ASTONMARTIN">
+        <div class="image-container"><img src="images/featured-cars/Volcano Red-VORE-171,2,25-640-en_US.avif"
+            alt="ASTON MARTIN DB12"></div>
+        <div class="container">
+          <h5 class="product-name">ASTON MARTIN DB12</h5>
+          <h5>$250,000</h5>
+          <h6>Info: Aston Martin DB12 - Grand Tourer - V12 - red - 2023</h6>
+        </div>
+        <a href="brochures/the-swanky-2024-aston-martin-db12.pdf" class="brochure" target="_blank">show brochure</a>
+
+      </div>
+      <div class="card ASTONMARTIN">
+        <div class="image-container"><img
+            src="images/featured-cars/Aston-Martin_Victor_2020_1000_0001-removebg-preview.png"
+            alt="ASTON MARTIN VICTOR"></div>
+        <div class="container">
+          <h5 class="product-name">ASTON MARTIN VICTOR</h5>
+          <h5>$250,000</h5>
+          <h6>Info: Aston Martin Victor - Track Only - V12 - black - 2022</h6>
+        </div>
+        <a href="" class="brochure" target="_blank">show brochure</a>
+
+      </div>
+      <div class="card ASTONMARTIN">
+        <div class="image-container"><img src="images/featured-cars/valhalla-removebg-preview.png" alt="ASTON MARTIN VALHALLA"></div>
+        <div class="container">
+          <h5 class="product-name">ASTON MARTIN VALHALLA</h5>
+          <h5>$250,000</h5>
+          <h6>Info: Aston Martin Valhalla - Hybrid - V8 - Light Navy Blue - 2024</h6>
+        </div>
+        <a href="brochures/Aston-Martin-Valhalla-Dealer-Brochure.pdf" class="brochure" target="_blank">show brochure</a>
+
+      </div>
+      <div class="card ASTONMARTIN">
+        <div class="image-container"><img src="images/featured-cars/Aston-Martin-Vantage2.png"
+            alt="ASTON MARTIN VANTAGE"></div>
+        <div class="container">
+          <h5 class="product-name">ASTON MARTIN VANTAGE</h5>
+          <h5>$250,000</h5>
+          <h6>Info: Aston Martin Vantage - Sports Car - V8 - white - 2022</h6>
+        </div>
+        <a href="brochures/Aston-Martin_V8_Vantage_4_7_brochure.pdf" class="brochure" target="_blank">show brochure</a>
+
+      </div>
+
+      <!-- AUDI -->
+      <div class="card AUDI">
+        <div class="image-container"><img src="images/featured-cars/a5.avif" alt="AUDI A5"></div>
+        <div class="container">
+          <h5 class="product-name">AUDI A5</h5>
+          <h5>$250,000</h5>
+          <h6>Info: Audi A5 - Sedan - V4 - black - 2021</h6>
+        </div>
+        <a href="brochures/Audi_ A5_2019.pdf" class="brochure" target="_blank">show brochure</a>
+
+      </div>
+      <div class="card AUDI">
+        <div class="image-container"><img src="images/featured-cars/rs7-removebg-preview.png" alt="AUDI RS7"></div>
+        <div class="container">
+          <h5 class="product-name">AUDI RS7</h5>
+          <h5>$250,000</h5>
+          <h6>Info: Audi RS7 - Hatchback - V8 - grey - 2023</h6>
+        </div>
+        <a href="brochures/Audi_US rs7_2019.pdf" class="brochure" target="_blank">show brochure</a>
+
+      </div>
+      <div class="card AUDI">
+        <div class="image-container"><img src="images/featured-cars/etron-removebg-preview.png" alt="AUDI E TRON"></div>
+        <div class="container">
+          <h5 class="product-name">AUDI E TRON</h5>
+          <h5>$250,000</h5>
+          <h6>Info: Audi E-Tron - Electric SUV - Dual Motor - grey - 2022</h6>
+        </div>
+        <a href="brochures/etron.pdf" class="brochure" target="_blank">show brochure</a>
+
+      </div>
+      <div class="card AUDI">
+        <div class="image-container"><img src="images/featured-cars/r8-removebg-preview.png" alt="AUDI R8"></div>
+        <div class="container">
+          <h5 class="product-name">AUDI R8</h5>
+          <h5>$250,000</h5>
+          <h6>Info: Audi R8 - Supercar - V10 - black - 2021</h6>
+        </div>
+        <a href="brochures/r8.pdf" class="brochure" target="_blank">show brochure</a>
+
+      </div>
+      <div class="card AUDI">
+        <div class="image-container"><img src="images/featured-cars/q8-removebg-preview.png" alt="AUDI Q8"></div>
+        <div class="container">
+          <h5 class="product-name">AUDI Q8</h5>
+          <h5>$250,000</h5>
+          <h6>Info: Audi Q8 - SUV - V6 - Blue - 2022</h6>
+        </div>
+        <a href="brochures/q8.pdf" class="brochure" target="_blank">show brochure</a>
+
+      </div>
+
+      <!-- MUSCLE CARS -->
+      <div class="card MUSCLECAR">
+        <div class="image-container"><img src="images/featured-cars/challenger-removebg-preview.png" alt="DODGE CHALLENGER"></div>
+        <div class="container">
+          <h5 class="product-name">DODGE CHALLENGER</h5>
+          <h5>$250,000</h5>
+          <h6>Info: Dodge Challenger - Muscle Car - V8 - Black - 2021</h6>
+        </div>
+        <a href="brochures/2023-CDN-Dodge-Challennger-ENG-Catalog.pdf" class="brochure" target="_blank">show brochure</a>
+
+      </div>
+      <div class="card MUSCLECAR">
+        <div class="image-container"><img src="images/featured-cars/charger.avif" alt="DODGE CHARGER"></div>
+        <div class="container">
+          <h5 class="product-name">DODGE CHARGER</h5>
+          <h5>$250,000</h5>
+          <h6>Info: Dodge Charger - Muscle Sedan - V8 - Black - 2022</h6>
+        </div>
+        <a href="brochures/dodge-charger-brochure.pdf" class="brochure" target="_blank">show brochure</a>
+
+      </div>
+      <div class="card MUSCLECAR">
+        <div class="image-container"><img src="images/featured-cars/mustang.webp" alt="FORD MUSTANG"></div>
+        <div class="container">
+          <h5 class="product-name">FORD MUSTANG</h5>
+          <h5>$250,000</h5>
+          <h6>Info: Ford Mustang - Iconic Coupe - V8 - Reddish brown - 2023</h6>
+        </div>
+        <a href="brochures/ford-caribbean-mustang-2022-brochure-download-eng.pdf" class="brochure" target="_blank">show brochure</a>
+      </div>
+
+      <div class="card MUSCLECAR">
+        <div class="image-container"><img src="images/featured-cars/camaro.avif" alt="CHEVROLET CAMARO"></div>
+        <div class="container">
+          <h5 class="product-name">CHEVROLET CAMARO</h5>
+          <h5>$250,000</h5>
+          <h6>Info: Chevrolet Camaro - Performance Coupe - V6 - Blue - 2022</h6>
+        </div>
+        <a href="brochures/CHEVROLET-CAMARO-BROCHURE.pdf" class="brochure" target="_blank">show brochure</a>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="contact-container" id="contact">
+  
+  
+    <div class="column1">
+  
+      <h1>IMD Car</h1>
+  
+      <p class="p1">get your desired car in resonable price</p>
+  
+      <p>IMD Car@gmail.com</p>
+  
+      <p>+1 (222) 1234567890</p>
+  
+    </div>
+  
+  
+  
+    <div class="column2">
+  
+      <h3>about devloon</h3>
+  
+  
+      <p>About us</p>
+      <p>terms of service</p>
+      <p>privacy policy</p>
+  
+  
+  
+    </div>
+  
+  
+  
+    <div class="column3">
+  
+      <h3>top brands</h3>
+  
+      <p>BMW</p>
+      <p>lamborghini</p>
+      <p>camaro</p>
+      <p>audi</p>
+      <p>nissan</p>
+  
+  
+    </div>
+  
+  
+    <div class="column4">
+  
+      <p>ferrari</p>
+      <p>porsche</p>
+      <p>land rover</p>
+      <p>Aston martin</p>
+      <p>mercedes</p>
+      <p>opel</p>
+  
+  
+    </div>
+  
+  
+    <div class="column5">
+  
+      <h3>news letter</h3>
+      <p>Subscribe to get latest
+        news update and informations</p>
+  
+      <form action="">
+        <input type="email" class="email" placeholder="email" required>
+        <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+      </form>
+  
+    </div>
+  
+  
+  </div>
+  
+  <p class="footer">© copyright. designed and developed by CS helwan.</p>
+  
+  </div>
+  
+
+  <script src="listcar.js"></script>
+</body>
+
+</html>
